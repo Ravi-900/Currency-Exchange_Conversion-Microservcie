@@ -1,0 +1,43 @@
+Initial
+
+- http://localhost:8765/CURRENCY-EXCHANGE/currency-exchange/from/USD/to/INR
+
+- http://localhost:8765/CURRENCY-CONVERSION/currency-conversion/from/USD/to/INR/quantity/10
+
+- http://localhost:8765/CURRENCY-CONVERSION/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+
+
+Lower Case
+
+- http://localhost:8765/currency-exchange/currency-exchange/from/USD/to/INR
+
+- http://localhost:8765/currency-conversion/currency-conversion/from/USD/to/INR/quantity/10
+
+- http://localhost:8765/currency-conversion/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+
+
+Custom Routes
+
+- http://localhost:8765/currency-exchange/from/USD/to/INR
+
+- http://localhost:8765/currency-conversion/from/USD/to/INR/quantity/10
+
+- http://localhost:8765/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+- http://localhost:8765/currency-conversion-new/from/USD/to/INR/quantity/10
+
+
+
+
+2023-04-26T22:37:20.748+05:30  INFO 20548 --- [  restartedMain] c.l.m.apigateway.ApiGatewayApplication   : Started ApiGatewayApplication in 1.547 seconds (process running for 314.498)
+2023-04-26T22:37:20.749+05:30 DEBUG 20548 --- [  restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2023-04-26T22:37:20.751+05:30  INFO 20548 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-26T22:37:20.752+05:30 DEBUG 20548 --- [  restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2023-04-26T22:37:32.595+05:30 DEBUG 20548 --- [ctor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6a71ede8-16] HTTP GET "/currency-conversion-new/from/USD/to/INR/quantity/10"
+2023-04-26T22:37:32.597+05:30 DEBUG 20548 --- [ctor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [6a71ede8-16] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+2023-04-26T22:37:32.598+05:30 DEBUG 20548 --- [ctor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [6a71ede8-16] Resource not found
+2023-04-26T22:37:32.608+05:30 DEBUG 20548 --- [ctor-http-nio-2] a.w.r.e.AbstractErrorWebExceptionHandler : [6a71ede8-16] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP GET /currency-conversion-new/from/USD/to/INR/quantity/10
+2023-04-26T22:37:32.610+05:30 DEBUG 20548 --- [ctor-http-nio-2] o.s.core.codec.CharSequenceEncoder       : [6a71ede8-16] Writing "<html><body><h1>Whitelabel Error Page</h1><p>This application has no configured error view, so you a (truncated)..."
+2023-04-26T22:37:32.613+05:30 DEBUG 20548 --- [ctor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6a71ede8-16] Completed 404 NOT_FOUND
